@@ -228,6 +228,10 @@ a:focus {
     z-index: 9;
   }
 
+  .navbar-light .navbar-toggler {
+    color: var(--main-primary-color);
+  }
+
   .navbar.nav-sticky {
     padding: 10px 60px;
     background: var(--main-secondary-color) !important;
@@ -266,11 +270,11 @@ a:focus {
 @media (max-width: 991.98px) {
   .navbar {
     padding: 15px;
-    background: var(--main-text-color) !important;
+    background: var(--main-dark-color) !important;
   }
 
   .navbar .navbar-brand {
-    color: var(--main-primary-color);
+    color: var(--main-primary-dark-color);
   }
 
   .navbar .navbar-nav {
@@ -283,6 +287,91 @@ a:focus {
 
   .navbar .dropdown-menu {
     box-shadow: none;
+  }
+
+  .navbar-toggler {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: .5s ease-in-out;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    position: relative;
+  }
+
+  .navbar-toggler span {
+    margin: 0;
+    padding: 0;
+  }
+
+  .toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--main-primary-color);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+
+  .middle-bar {
+    margin-top: 0px;
+  }
+
+
+  /* nav cerrado */
+
+  .navbar-toggler.collapsed .top-bar {
+    position: absolute;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    filter: alpha(opacity=100);
+  }
+
+  .navbar-toggler.collapsed .bottom-bar {
+    position: absolute;
+    top: 20px;
+    transform: rotate(0deg);
+  }
+
+  /* nav clickeado */
+
+  .navbar-toggler .top-bar {
+    top: inherit;
+    transform: rotate(135deg);
+  }
+
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    top: inherit;
+    filter: alpha(opacity=0);
+  }
+
+  .navbar-toggler .bottom-bar {
+    top: inherit;
+    transform: rotate(-135deg);
+  }
+
+  /* color de las lineas */
+
+  .navbar-toggler.collapsed .toggler-icon {
+    background: linear-gradient(263deg, var(--main-primary-dark-color) 0%, var(--main-primary-color) 100%);
   }
 }
 
@@ -410,6 +499,7 @@ a:focus {
   .hero {
     padding-top: 60px;
     padding-bottom: 60px;
+    height: auto;
   }
 
   .hero,
@@ -439,6 +529,8 @@ a:focus {
 }
 
 @media (max-width: 575.98px) {
+
+
   .hero .hero-text p {
     font-size: 16px;
   }
