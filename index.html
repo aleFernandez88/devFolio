@@ -11,8 +11,10 @@
     <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
 
@@ -37,7 +39,14 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
       <div class="container-fluid">
-        <a href="index.html" class="navbar-brand">DevFolio</a>
+        <div class="logo">
+          <a href="https://ianitow.github.io">
+            <span class="logo-signo">&lt;</span>
+            <span class="logo-ale">Ale</span>
+            <span class="logo-fernandez">Fernández</span>
+            <span class="logo-signo"> /&gt;</span>
+          </a>
+        </div>
         <button
           type="button"
           class="navbar-toggler"
@@ -53,14 +62,9 @@
         >
           <div class="navbar-nav ml-auto">
             <a href="#home" class="nav-item nav-link active">Home</a>
-            <a href="#about" class="nav-item nav-link">About</a>
-            <a href="#service" class="nav-item nav-link">Service</a>
-            <a href="#experience" class="nav-item nav-link">Experience</a>
+            <a href="#about" class="nav-item nav-link">Conóceme</a>
+            <a href="#experience" class="nav-item nav-link">Experiencia</a>
             <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-            <a href="#price" class="nav-item nav-link">Price</a>
-            <a href="#review" class="nav-item nav-link">Review</a>
-            <a href="#team" class="nav-item nav-link">Team</a>
-            <a href="#blog" class="nav-item nav-link">Blog</a>
             <a href="#contact" class="nav-item nav-link">Contact</a>
           </div>
         </div>
@@ -75,23 +79,28 @@
           <div class="col-sm-12 col-md-6">
             <div class="hero-content">
               <div class="hero-text">
-                <p>I'm</p>
+                <p>Hola, soy</p>
                 <h1>Alejandro Fernández</h1>
                 <h2></h2>
                 <div class="typed-text">
-                  Web Designer, Web Developer, Front End Developer, Apps
+                  Front End Developer, Web Designer, Web Developer, Apps
                   Designer, Apps Developer
                 </div>
               </div>
               <div class="hero-btn">
-                <a class="btn" href="">Hire Me</a>
-                <a class="btn" href="">Contact Me</a>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1WLNY4B8Gz9FWV1NSpjJXSPIuaGcNqvPe/view"
+                  >Mira mi CV</a
+                >
+                <a class="btn" href="">Contácteme</a>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-6 d-none d-md-block">
             <div class="hero-image">
-              <img src="img/hero.png" alt="Hero Image" />
+              <img src="img/IMG-20210724-WA0005.jpeg" alt="Hero Image" />
             </div>
           </div>
         </div>
@@ -103,28 +112,33 @@
     <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-4">
             <div class="about-img">
-              <img src="img/about.jpg" alt="Image" />
+              <img src="img/69838237.jpg" alt="Image" />
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-8">
             <div class="about-content">
               <div class="section-header text-left">
-                <p>Learn About Me</p>
-                <h2>10 Years Experience</h2>
+                <p>Conóceme</p>
+                <h2>5 Años Aprendiendo</h2>
               </div>
               <div class="about-text">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec pretium mi. Curabitur facilisis ornare velit non
-                  vulputate. Aliquam metus tortor, auctor id gravida
+                  ¡Hola! Soy un desarrollador frontend de Santa Fe, Argentina.
+                  Trabajo con React y me entusiasma ver cómo una buena interfaz
+                  puede mejorar la vida de las personas. Me formé en bootcamps,
+                  cursos intensivos y proyectos colaborativos reales que me
+                  enseñaron más que solo código: me enseñaron a trabajar en
+                  equipo, a resolver problemas y a ser constante. Hoy busco
+                  seguir creciendo profesionalmente, aportar valor desde el
+                  frontend y construir productos digitales que realmente sirvan.
                 </p>
               </div>
               <div class="skills">
                 <div class="skill-name">
-                  <p>Web Design</p>
-                  <p>85%</p>
+                  <p>Maquetación</p>
+                  <p>95%</p>
                 </div>
                 <div class="progress">
                   <div
@@ -136,8 +150,8 @@
                   ></div>
                 </div>
                 <div class="skill-name">
-                  <p>Web Development</p>
-                  <p>95%</p>
+                  <p>Frontend con React JS</p>
+                  <p>75%</p>
                 </div>
                 <div class="progress">
                   <div
@@ -149,8 +163,8 @@
                   ></div>
                 </div>
                 <div class="skill-name">
-                  <p>Apps Design</p>
-                  <p>90%</p>
+                  <p>Trabajos con Github</p>
+                  <p>80%</p>
                 </div>
                 <div class="progress">
                   <div
@@ -162,7 +176,7 @@
                   ></div>
                 </div>
                 <div class="skill-name">
-                  <p>Apps Development</p>
+                  <p>Metodología SCRUM</p>
                   <p>85%</p>
                 </div>
                 <div class="progress">
@@ -175,7 +189,6 @@
                   ></div>
                 </div>
               </div>
-              <a class="btn" href="">Learn More</a>
             </div>
           </div>
         </div>
@@ -183,8 +196,8 @@
     </div>
     <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="service" id="service">
+    <!-- Technologies Start -->
+    <!-- <div class="service" id="service">
       <div class="container">
         <div
           class="section-header text-center wow zoomIn"
@@ -252,7 +265,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Service End -->
 
     <!-- Experience Start -->
@@ -262,18 +275,23 @@
           class="section-header text-center wow zoomIn"
           data-wow-delay="0.1s"
         >
-          <p>My Resume</p>
-          <h2>Working Experience</h2>
+          <p>Mi Curriculum</p>
+          <h2>Experiencia Real</h2>
         </header>
         <div class="timeline">
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2045 - 2050</div>
-              <h2>Web Developer</h2>
-              <h4>Soft Agency, San Francisco, CA</h4>
+              <div class="timeline-date">MAYO 2021 - Actualidad</div>
+              <h2>Asistente Académico</h2>
+              <h4>
+                <strong>CoderHouse</strong> - Plataforma de cursos online.
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
+                Acompañamiento a estudiantes en cursos de
+                <span>Desarrollo Web, JavaScript y React JS</span>.
+                Planificación de clases, resolución de dudas en vivo y
+                corrección de proyectos. Más de 18 comisiones asistidas hasta la
+                fecha.
               </p>
             </div>
           </div>
@@ -282,23 +300,33 @@
             data-wow-delay="0.1s"
           >
             <div class="timeline-text">
-              <div class="timeline-date">2045 - 2050</div>
+              <div class="timeline-date">FEBRERO 2024 - FEBRERO 2025</div>
               <h2>Web Developer</h2>
-              <h4>Soft Agency, San Francisco, CA</h4>
+              <h4>
+                <strong class="fw-bold">No Country</strong> - Simulación
+                laboral.
+              </h4>
               <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
+                Participé en múltiples MVPs: clínica veterinaria, juegos tipo
+                casino y viajes compartidos. Implementación de registros, login,
+                perfiles dinámicos y consumo de APIs REST. Stack:
+                <span>React, Redux, Tailwind CSS, Figma</span>. Equipos
+                distribuidos con metodologías ágiles (Scrum, Jira, Miro).
               </p>
             </div>
           </div>
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2045 - 2050</div>
-              <h2>Web Developer</h2>
-              <h4>Soft Agency, San Francisco, CA</h4>
+              <div class="timeline-date">JULIO - Agosto 2024</div>
+              <h2>Frontend Developer</h2>
+              <h4><strong>Quinto Impacto </strong> (LATAM Semillero)</h4>
               <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
+                Proyecto Ubuntu: plataforma de financiamiento de impacto social.
+                Desarrollé vistas interactivas en <span>React</span> utilizando
+                <span>Material UI</span> y CSS, integré login con
+                <span>Google Auth</span>, dashboard de administración y paneles
+                de estadísticas. Trabajo en equipo con <span>Scrum</span>,
+                usando Gitea, <span>Trello y Figma</span>.
               </p>
             </div>
           </div>
@@ -307,37 +335,28 @@
             data-wow-delay="0.1s"
           >
             <div class="timeline-text">
-              <div class="timeline-date">2045 - 2050</div>
+              <div class="timeline-date">MAYO 2022 - DICIEMBRE 2022</div>
               <h2>Web Developer</h2>
-              <h4>Soft Agency, San Francisco, CA</h4>
+              <h4><strong>Freelance</strong> - trabajos independientes</h4>
               <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
+                Desarrolle 3 sitios web para distintos emprendimientos de tipo
+                gastronómico, servicios de peluquería y contrataciones de
+                finanzas.
               </p>
             </div>
           </div>
           <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
             <div class="timeline-text">
-              <div class="timeline-date">2045 - 2050</div>
+              <div class="timeline-date">OCTUBRE 2021 - JULIO 2023</div>
               <h2>Web Developer</h2>
-              <h4>Soft Agency, San Francisco, CA</h4>
+              <h4><strong>ORISOM</strong> Corp.</h4>
               <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
-              </p>
-            </div>
-          </div>
-          <div
-            class="timeline-item right wow slideInRight"
-            data-wow-delay="0.1s"
-          >
-            <div class="timeline-text">
-              <div class="timeline-date">2045 - 2050</div>
-              <h2>Web Developer</h2>
-              <h4>Soft Agency, San Francisco, CA</h4>
-              <p>
-                Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus
-                erat sagittis non. Ut blandit semper pretium.
+                Maquetación de interfaces en
+                <span>HTML, CSS y JavaScript</span> bajo diseño CMS. Integración
+                de <span>librerías frontend</span> para efectos de scroll,
+                sliders, diseño responsive. <span>Colaboración</span> con
+                equipos de <span>diseño</span>
+                para traducir UI en componentes funcionales.
               </p>
             </div>
           </div>
