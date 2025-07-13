@@ -285,6 +285,10 @@ a:focus {
     padding: 5px;
   }
 
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--main-text-color);
+  }
+
   .navbar .dropdown-menu {
     box-shadow: none;
   }
