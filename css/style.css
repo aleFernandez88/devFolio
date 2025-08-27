@@ -888,93 +888,13 @@ a:focus {
   }
 }
 
-
-/*******************************/
-/********* Service CSS *********/
-/*******************************/
-.service {
-  position: relative;
-  width: 100%;
-  padding: 45px 0 15px 0;
-}
-
-.service .service-item {
-  position: relative;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  box-shadow: inset 0 0 0 0 transparent;
-  transition: ease-out 0.5s;
-}
-
-.service .service-item:hover {
-  box-shadow: inset 800px 0 0 0 var(--main-primary-color);
-}
-
-.service .service-icon {
-  position: relative;
-  width: 150px;
-  min-height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid var(--main-primary-color);
-  background: var(--main-text-color);
-}
-
-.service .service-icon i {
-  position: relative;
-  font-size: 60px;
-  color: var(--main-primary-color);
-  transition: .3s;
-}
-
-.service .service-item:hover i {
-  font-size: 75px;
-}
-
-.service .service-text {
-  position: relative;
-  width: calc(100% - 120px);
-  padding: 0 30px;
-}
-
-.service .service-text h3 {
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 600;
-  transition: 1s;
-}
-
-.service .service-text p {
-  margin: 0;
-  font-size: 16px;
-  transition: 1s;
-}
-
-.service .service-item:hover .service-text h3,
-.service .service-item:hover .service-text p {
-  color: var(--main-text-color);
-}
-
-@media (max-width: 575.98px) {
-  .service .service-text h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  .service .service-text p {
-    font-size: 14px;
-  }
-}
-
-
 /*******************************/
 /******** Portfolio CSS ********/
 /*******************************/
 .portfolio {
   position: relative;
-  padding: 45px 0 15px 0;
+  padding: 45px 0 45px 0;
+  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);
 }
 
 .portfolio #portfolio-filter {
@@ -1080,11 +1000,15 @@ a:focus {
 /********* Banner CSS **********/
 /*******************************/
 .banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
   width: 100%;
-  margin: 45px 0;
+  height: 80dvh;
   padding: 90px 0;
-  background: linear-gradient(to top, rgba(1, 1, 1, 1) 10%, rgba(1, 1, 1, 0.8) 51%, rgba(1, 1, 1, 0.2) 100%), url(../img/banner-laptop.jpg);
+  background: linear-gradient(to top, rgba(1, 1, 1, 1) 10%, rgba(1, 1, 1, 0.8) 51%, rgba(1, 1, 1, 0.1) 100%), url(../img/banner-in.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -1123,351 +1047,21 @@ a:focus {
 
 .banner .banner-text .btn {
   margin-top: 15px;
-  color: var(--main-primary-color);
-  background: var(--main-grey-color) !important;
+  color: var(--main-text-color);
+  background: transparent !important;
   box-shadow: none;
 }
 
 .banner .banner-text .btn:hover {
-  color: var(--main-text-color);
+  color: #0072b1;
   background: transparent;
   box-shadow: none;
-  border-color: var(--main-text-color);
+  border-color: transparent;
 }
 
 .banner i {
-  font-size: 40px;
+  font-size: 80px;
 }
-
-/*******************************/
-/********* Pricing CSS *********/
-/*******************************/
-.price {
-  position: relative;
-  width: 100%;
-  padding: 45px 0 15px 0;
-}
-
-.price .row {
-  padding: 0 15px;
-}
-
-.price .col-md-4 {
-  padding: 0;
-}
-
-.price .price-item {
-  position: relative;
-  margin-bottom: 30px;
-  background: var(--main-text-color);
-}
-
-.price .featured-item {
-  box-shadow: 0 0 30px rgba(0, 0, 0, .2);
-  z-index: 1;
-}
-
-.price .price-header,
-.price .price-body,
-.price .price-footer {
-  position: relative;
-  text-align: center;
-}
-
-.price .price-header {
-  padding: 45px 0 30px 0;
-  color: #414141;
-}
-
-.price .price-item.featured-item .price-header {
-  color: var(--main-primary-color);
-}
-
-.price .price-title h2 {
-  font-size: 25px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.price .price-prices h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-left: 10px;
-}
-
-.price .price-prices h2 small {
-  position: absolute;
-  font-size: 18px;
-  font-weight: 400;
-  margin-top: 9px;
-  margin-left: -12px;
-}
-
-.price .price-prices h2 span {
-  margin-left: 1px;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.price .price-item.featured-item h2 {
-  color: var(--main-primary-color);
-}
-
-.price .price-body {
-  padding: 0 0 20px 0;
-}
-
-.price .price-description ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.price .price-description ul li {
-  padding: 0 0 20px 0;
-}
-
-.price .price-item .price-action {
-  padding-bottom: 45px;
-}
-
-.price .price-item .price-action .btn {
-  color: var(--main-text-color);
-  background: #414141;
-  box-shadow: inset 0 0 0 50px #414141;
-}
-
-.price .price-item .price-action .btn:hover {
-  color: #414141;
-  background: transparent;
-  box-shadow: inset 0 0 0 0 #414141;
-  border-color: #414141;
-}
-
-.price .price-item.featured-item .price-action .btn {
-  color: var(--main-text-color);
-  background: var(--main-primary-color);
-  box-shadow: inset 0 0 0 50px var(--main-primary-color);
-}
-
-.price .price-item.featured-item .price-action .btn:hover {
-  color: var(--main-primary-color);
-  background: transparent;
-  box-shadow: inset 0 0 0 0 var(--main-primary-color);
-  border-color: var(--main-primary-color);
-}
-
-
-/*******************************/
-/*********** Team CSS **********/
-/*******************************/
-.team {
-  position: relative;
-  width: 100%;
-  padding: 45px 0 15px 0;
-}
-
-.team .team-item {
-  position: relative;
-  background: var(--main-text-color);
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  box-shadow: inset 0 0 0 0 transparent;
-  transition: ease-out 0.5s;
-}
-
-.team .team-img {
-  position: relative;
-  width: 50%;
-  overflow: hidden;
-}
-
-.team .team-img img {
-  position: relative;
-  width: 100%;
-  transition: .5s;
-}
-
-.team .team-text {
-  position: relative;
-  width: 50%;
-  padding: 0 30px;
-}
-
-.team .team-text h2 {
-  color: var(--main-primary-color);
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  transition: 1s;
-}
-
-.team .team-text h4 {
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  transition: 1s;
-}
-
-.team .team-text p {
-  margin-bottom: 20px;
-  transition: 1s;
-}
-
-.team .team-social {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.team .team-social a.btn {
-  width: 35px;
-  height: 35px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: normal;
-  margin-right: 5px;
-}
-
-.team .team-item:hover {
-  box-shadow: inset 800px 0 0 0 var(--main-primary-color);
-}
-
-.team .team-item:hover .team-img img {
-  transform: scale(1.2);
-}
-
-.team .team-item:hover .team-text h2,
-.team .team-item:hover .team-text h4,
-.team .team-item:hover .team-text p {
-  color: var(--main-text-color);
-}
-
-.team .team-item:hover .team-social a.btn {
-  background: var(--main-text-color);
-}
-
-.team .team-item:hover .team-social a.btn:hover {
-  border-color: var(--main-text-color);
-}
-
-@media(max-width: 575.98px) {
-  .team .team-text {
-    padding: 0 15px;
-  }
-
-  .team .team-text h2 {
-    font-size: 16px;
-    margin-bottom: 0;
-  }
-
-  .team .team-text h4 {
-    margin-bottom: 5px;
-  }
-
-  .team .team-text p {
-    font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 10px;
-  }
-}
-
-
-/*******************************/
-/******* Testimonial CSS *******/
-/*******************************/
-.testimonial {
-  position: relative;
-  margin: 45px 0;
-  padding: 90px 0;
-  background: var(--main-primary-color);
-}
-
-.testimonial .container {
-  max-width: 900px;
-}
-
-.testimonial .testimonial-icon {
-  margin-bottom: 45px;
-  text-align: center;
-}
-
-.testimonial .testimonial-icon i {
-  font-size: 60px;
-  color: rgba(256, 256, 256, .5);
-}
-
-.testimonial .testimonial-item {
-  position: relative;
-  margin: 0 15px;
-  text-align: center;
-}
-
-.testimonial .testimonial-img {
-  position: relative;
-  margin-bottom: 15px;
-  z-index: 1;
-}
-
-.testimonial .testimonial-item img {
-  margin: 0 auto;
-  width: 120px;
-  padding: 10px;
-  border: 5px dotted var(--main-text-color);
-  border-radius: 100px;
-}
-
-.testimonial .testimonial-text {
-  position: relative;
-  margin-top: -70px;
-  padding: 65px 35px 30px 35px;
-  text-align: center;
-  background: var(--main-text-color);
-  border-radius: 500px;
-}
-
-.testimonial .testimonial-item p {
-  font-size: 18px;
-  font-style: italic;
-}
-
-.testimonial .testimonial-text h3 {
-  color: var(--main-primary-color);
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.testimonial .testimonial-text h4 {
-  color: #666666;
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.testimonial .owl-dots {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.testimonial .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgba(256, 256, 256, .5);
-}
-
-.testimonial .owl-dot.active {
-  background: var(--main-text-color);
-}
-
 
 /*******************************/
 /********* Contact CSS *********/
@@ -1475,15 +1069,23 @@ a:focus {
 .contact {
   position: relative;
   width: 100%;
-  margin: 45px 0 0;
   background: linear-gradient(to right, rgba(1, 1, 1, 1) 10%, rgba(1, 1, 1, 0.8) 51%, rgba(1, 1, 1, 0.2) 100%), url('../img/wallpaper-enter-keycup2.jpg');
   background-size: cover;
   background-attachment: fixed;
+}
 
+.contact .section-header {
+  margin-bottom: 0;
+  padding-top: 4rem;
+}
+
+.contact .section-header p {
+  background: linear-gradient(to right, rgba(1, 1, 1, 1) 10%, rgba(1, 1, 1, 0.8) 51%, rgba(1, 1, 1, 0.2) 100%), url('../img/wallpaper-enter-keycup2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .contact .container-fluid {
-
   background-size: contain;
 }
 
@@ -1654,7 +1256,7 @@ a:focus {
   margin-bottom: 20px;
   font-size: 30px;
   font-weight: 700;
-  color: var(--main-text-color);
+  color: var(--main-primary-color);
 }
 
 .footer .footer-info h3 {
@@ -1671,7 +1273,7 @@ a:focus {
 }
 
 .footer .footer-menu p {
-  color: var(--main-text-color);
+  color: var(--main-primary-color);
   font-size: 22px;
   font-weight: 600;
   line-height: 20px;
@@ -1713,6 +1315,7 @@ a:focus {
   margin-top: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
+  font-size: 10px;
 }
 
 .footer .copyright::before {
@@ -1774,12 +1377,14 @@ a:focus {
 }
 
 .box-container {
-  align-items: center;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
   padding: 35px 15px;
-  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
 @media screen and (min-width:1024px) {
@@ -1792,7 +1397,6 @@ a:focus {
   position: relative;
   -webkit-backface-visibility: hidden;
   width: 400px;
-  margin-bottom: 35px;
   max-width: 100%;
 }
 
@@ -1867,7 +1471,7 @@ a:focus {
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
-
+  text-shadow: 0 0 0 #333;
   transform: translateY(-50%) translateZ(60px) scale(.94);
   -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
   -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
