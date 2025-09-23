@@ -5,16 +5,54 @@
   --main-primary-color: #66fcf1;
   --main-primary-dark-color: #397977;
   --main-dark-color: #1b222c;
-  --main-secondary-color: #202833;
+  --main-secondary-color: #1f2a33;
   --main-shadow-color: #252e3b;
-  --main-grey-color: #243443;
-  --main-text-color: #ffffff;
+  --main-grey-color: #00121a;
+  --main-text-color: #94a3b8;
   --main-text-secondary-color: #80858b;
+  /* 1. Deep Space — azul profundo + púrpura */
+  --dark-gradient-1: linear-gradient(135deg, #0f1724 0%, #0b1220 30%, #2b0f3a 100%);
+
+  /* 2. Night Aurora — verde azulado con brillo sutil */
+  --dark-gradient-2: radial-gradient(1200px 600px at 10% 20%, rgba(56, 189, 248, 0.12), transparent 15%),
+    linear-gradient(180deg, #020617 0%, #071028 100%);
+
+  /* 3. Ember Void — negro + rojo apagado (drama) */
+  --dark-gradient-3: linear-gradient(135deg, #020204 0%, #0d0203 40%, #4b0f13 100%);
+
+  /* 4. Metalic Slate — gris azulado, elegante */
+  --dark-gradient-4: linear-gradient(180deg, #0b0f14 0%, #12171b 40%, #1f2a33 100%);
+
+  /* 5. Purple Haze — morado intenso con punto luminoso */
+  --dark-gradient-5: radial-gradient(600px 300px at 80% 10%, rgba(186, 85, 255, 0.06), transparent 20%),
+    linear-gradient(180deg, #07020b 0%, #1a0026 100%);
+
+  /* 6. Teal Drift — teal profundo */
+  --dark-gradient-6: linear-gradient(160deg, #001218 0%, #002a31 60%, #003a3f 100%);
+
+  /* 7. Cosmic Dust — azul + toques magenta muy sutiles */
+  --dark-gradient-7: linear-gradient(120deg, #040617 0%, #07203a 50%, #2b1333 100%);
+
+  /* 8. Graphite — monocromo con contraste suave */
+  --dark-gradient-8: linear-gradient(180deg, #0a0a0a 0%, #121212 60%, #1c1c1c 100%);
+
+  /* 9. Ink & Cyan — cian neón sobre negro con brillo */
+  --dark-gradient-9: radial-gradient(800px 400px at 10% 80%, rgba(34, 211, 238, 0.06), transparent 12%),
+    linear-gradient(180deg, #000205 0%, #00121a 100%);
+
+  /* 10. LavaGlass — elegante con punto cálido */
+  --dark-gradient-10: linear-gradient(135deg, #05060a 0%, #0b0d12 55%, #24100b 100%);
+
+  /* 11. Frosted Night — azul frío + brillo blanco muy suave */
+  --dark-gradient-11: linear-gradient(180deg, #021122 0%, #071828 40%, #0b2633 100%);
+
+  /* 12. Violet Neon — morado vibrante y oscuro */
+  --dark-gradient-12: linear-gradient(135deg, #08020b 0%, #1b0030 40%, #3a0060 100%);
 }
 
 body {
   color: var(--main-text-color);
-  background: var(--main-grey-color);
+  background: var(--main-secondary-color);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -55,20 +93,20 @@ a:focus {
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--main-text-color);
-  background: var(--main-primary-color);
+  background: var(--main-text-color);
   border: 2px solid transparent;
   border-radius: 0;
-  box-shadow: inset 0 0 0 50px var(--main-primary-color);
+  box-shadow: inset 0 0 0 50px var(--main-text-color);
   transition: ease-out 0.3s;
   -webkit-transition: ease-out 0.3s;
   -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-  color: var(--main-primary-color);
   background: transparent;
   box-shadow: inset 0 0 0 0 var(--main-primary-color);
   border-color: var(--main-primary-color);
+  background: var(--main-primary-color);
 }
 
 #loader {
@@ -143,7 +181,7 @@ a:focus {
 }
 
 .back-to-top i {
-  color: var(--main-text-color);
+  color: var(--main-shadow-color);
 }
 
 .back-to-top:hover i {
@@ -391,7 +429,8 @@ a:focus {
   height: 90vh;
   padding: 120px 0 0 0;
   overflow: hidden;
-  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);
+  /* 1,4,8,9 */
+  background: var(--dark-gradient-4);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,7 +448,9 @@ a:focus {
 
 .hero .hero-image img {
   max-width: 80%;
-  max-height: 80%;
+  max-height: 60dvh;
+  display: block;
+  margin: 0 auto
 }
 
 .hero .hero-content {
@@ -455,17 +496,27 @@ a:focus {
   color: var(--main-text-color);
 }
 
-.hero .hero-btn .btn {
-  margin-top: 35px;
-  color: var(--main-text-color);
-  background: var(--main-text-secondary-color);
-  box-shadow: inset 0 0 0 50px var(--main-text-secondary-color);
+.hero .hero-btn {
+  margin-top: 30px;
+  margin-left: -30px;
 }
 
-.hero .hero-btn .btn:hover {
+.hero .hero-btn .boton {
+  margin-top: 35px;
+  color: var(--main-text-color);
+  background-color: transparent;
+  font-size: 1.3rem;
+  padding: 15px 30px;
+
+  border: 2px solid;
+  border-color: transparent;
+
+}
+
+.hero .hero-btn .boton:hover {
   color: var(--main-text-color);
   background: transparent;
-  box-shadow: inset 0 0 0 0 var(--main-primary-color);
+  border: 2px solid;
   border-color: var(--main-primary-color);
 }
 
@@ -576,9 +627,10 @@ a:focus {
   letter-spacing: 1px;
   text-transform: uppercase;
   background: var(--main-grey-color);
+  z-index: 2;
 }
 
-.section-header p::before {
+/* .section-header p::before {
   position: absolute;
   content: "";
   height: 3px;
@@ -586,16 +638,16 @@ a:focus {
   right: 0;
   left: -30px;
   background: var(--main-primary-color);
-  z-index: -1;
-}
+  z-index: 0;
+} */
 
 .section-header p::after {
   position: absolute;
   content: "";
-  width: 3px;
+  width: 45px;
   height: 3px;
   top: 11px;
-  left: 3px;
+  left: -45px;
   background: var(--main-primary-color);
   z-index: 1;
 }
@@ -622,11 +674,27 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, rgba(42, 52, 67, 1) 0%, rgba(36, 52, 67, 1) 100%);
-  ;
+  background: var(--dark-gradient-9);
+  padding-top: 40px;
 }
 
-.about::before {
+.patron {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.patron svg.top {
+  position: absolute;
+  top: 0;
+}
+
+.patron svg.bot {
+  position: absolute;
+  bottom: 0;
+}
+
+/* .about::before {
   background-image: url(https://ianitow.github.io/assets/bordatop.svg), url(https://ianitow.github.io/assets/sombratop.svg);
   background-size: contain;
   background-color: var(--main-secondary-color);
@@ -635,7 +703,7 @@ a:focus {
   height: 120px;
   content: " ";
   background-position: center bottom;
-}
+} */
 
 .about::before .about .col-lg-6 {
   padding: 0;
@@ -678,6 +746,7 @@ a:focus {
   margin-bottom: 5px;
   font-size: 16px;
   font-weight: 400;
+  color: var(--main-primary-color);
 }
 
 .about .skill-name p:last-child {
@@ -692,7 +761,7 @@ a:focus {
 
 .about .progress .progress-bar {
   width: 0px;
-  background: var(--main-primary-color);
+  background: var(--main-text-secondary-color);
   border-radius: 10px;
   transition: 2s;
 }
@@ -714,6 +783,7 @@ a:focus {
 .experience {
   position: relative;
   padding: 45px 0 15px 0;
+  background: var(--main-grey-color);
 }
 
 .experience .timeline {
@@ -725,7 +795,7 @@ a:focus {
   content: '';
   position: absolute;
   width: 2px;
-  background: var(--main-primary-color);
+  background: var(--main-text-color);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -756,8 +826,8 @@ a:focus {
   height: 16px;
   top: 48px;
   right: -8px;
-  background: var(--main-text-color);
-  border: 2px solid var(--main-primary-color);
+  background: var(--main-text-secondary-color);
+  border: 2px solid var(--main-text-secondary-color);
   border-radius: 16px;
   z-index: 1;
 }
@@ -775,12 +845,12 @@ a:focus {
   right: 10px;
   z-index: 1;
   border: 10px solid;
-  border-color: transparent transparent transparent #dddddd;
+  border-color: transparent transparent transparent var(--main-text-color);
 }
 
 .experience .timeline .timeline-item.right::before {
   left: 10px;
-  border-color: transparent #dddddd transparent transparent;
+  border-color: transparent var(--main-text-color) transparent transparent;
 }
 
 .experience .timeline .timeline-date {
@@ -789,10 +859,15 @@ a:focus {
   top: 44px;
   font-size: 16px;
   font-weight: 600;
-  color: var(--main-primary-color);
+  color: var(--main-text-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 1;
+}
+
+.experience .timeline .timeline-date:hover {
+  color: var(--main-primary-color);
+
 }
 
 .experience .timeline .timeline-item.left .timeline-date {
@@ -894,7 +969,7 @@ a:focus {
 .portfolio {
   position: relative;
   padding: 45px 0 45px 0;
-  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);
+  background: var(--dark-gradient-5);
 }
 
 .portfolio #portfolio-filter {
@@ -1239,7 +1314,7 @@ a:focus {
 .footer {
   position: relative;
   padding-top: 45px;
-  background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%);
+  background: var(--dark-gradient-4)
 }
 
 .footer .container-fluid {
