@@ -1457,22 +1457,30 @@ a:focus {
   flex-wrap: wrap;
   flex-direction: column;
   padding: 35px 15px;
-  max-width: 1024px;
+  max-width: 1320px;
   margin: 0 auto;
   gap: 2rem;
 }
 
 @media screen and (min-width:1024px) {
   .box-container {
-    flex-direction: row
+    flex-direction: row;
+    align-items: stretch;
   }
 }
 
 .box-item {
   position: relative;
   -webkit-backface-visibility: hidden;
-  width: 400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media screen and (min-width:1024px) {
+  .box-item {
+    width: calc(33.333% - 1.5rem);
+    max-width: none;
+  }
 }
 
 .flip-box {
