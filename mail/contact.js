@@ -57,10 +57,10 @@ const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
     btn.textContent = "Enviando...";
 
     const params = {
-      from_name:    document.getElementById("name").value.trim(),
-      from_email:   document.getElementById("email").value.trim(),
-      subject:      document.getElementById("subject").value.trim(),
-      message:      document.getElementById("message").value.trim(),
+      name:     document.getElementById("name").value.trim(),
+      reply_to: document.getElementById("email").value.trim(),
+      asunto:   document.getElementById("subject").value.trim(),
+      message:  document.getElementById("message").value.trim(),
     };
 
     emailjs
