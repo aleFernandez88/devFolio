@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <title>Ale webFolio - Alejandro Fernández Portfolio web</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="Ale Fernández Developer" name="keywords" />
-    <meta content="Portfolio web Frontend" name="description" />
+    <title>Ale Fernández | Frontend Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alejandro Fernández" />
+    <meta name="keywords" content="Alejandro Fernández, Frontend Developer, React, TypeScript, Tailwind CSS, Portfolio, Argentina" />
+    <meta name="description" content="Portfolio de Alejandro Fernández, Frontend Developer especializado en React, TypeScript y Tailwind CSS. Curuzú Cuatía, Argentina." />
 
-    <!-- Favicon -->
     <link href="./img/favi-af-2.jpg" rel="icon" />
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,63 +17,39 @@
       rel="stylesheet"
     />
 
-    <!-- CSS Libraries -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Nav Bar Start -->
-    <div class="navbar navbar-dark navbar-expand-lg bg-light navbar-light">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-light navbar-light">
       <div class="container-fluid">
         <div class="logo">
-          <a href="#">
+          <a href="#home">
             <span class="logo-signo">&lt;</span>
             <span class="logo-ale">Ale</span>
             <span class="logo-fernandez">Fernández</span>
             <span class="logo-signo"> /&gt;</span>
           </a>
         </div>
-        <!-- <button
-          type="button"
-          class="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
         <button
           class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
           data-toggle="collapse"
           data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Abrir menú de navegación"
         >
           <span class="toggler-icon top-bar"></span>
           <span class="toggler-icon middle-bar"></span>
           <span class="toggler-icon bottom-bar"></span>
         </button>
-
-        <div
-          class="collapse navbar-collapse justify-content-between"
-          id="navbarCollapse"
-        >
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
           <div class="navbar-nav ml-auto">
             <a href="#home" class="nav-item nav-link active">Home</a>
             <a href="#about" class="nav-item nav-link">Conóceme</a>
@@ -84,664 +59,544 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- Nav Bar End -->
+    </nav>
 
-    <!-- Hero Start -->
-    <div class="hero" id="home">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-sm-12 col-md-6">
-            <div class="hero-content">
-              <div class="hero-text">
-                <p>Hola, soy</p>
-                <h1>Alejandro Fernández</h1>
-                <h2></h2>
-                <div class="typed-text">
-                  React Dev , TypeScript , Front End Dev, Diseñador Web
+    <main>
+      <section class="hero" id="home">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-sm-12 col-md-6">
+              <div class="hero-content">
+                <div class="hero-text">
+                  <p>Hola, soy</p>
+                  <h1>Alejandro Fernández</h1>
+                  <h2></h2>
+                  <div class="typed-text">
+                    React Dev , TypeScript , Front End Dev, Diseñador Web
+                  </div>
+                </div>
+                <div class="hero-btn">
+                  <a
+                    class="boton"
+                    href="https://drive.google.com/file/d/1ONoVDzZ4b-MdiZioskMep53301CvWK8-/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Mira mi CV</a
+                  >
+                  <a
+                    class="boton"
+                    href="https://wa.me/5493774491666"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Contácteme</a
+                  >
                 </div>
               </div>
-              <div class="hero-btn">
-                <a
-                  class="boton"
-                  target="_blank"
-                  href="https://drive.google.com/file/d/1ONoVDzZ4b-MdiZioskMep53301CvWK8-/view?usp=sharing"
-                  >Mira mi CV</a
-                >
-                <a
-                  class="boton"
-                  href="https://wa.me/5493774491666"
-                  target="_blank"
-                  >Contácteme</a
-                >
-              </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 d-none d-md-block">
-            <div class="hero-image">
-              <img src="img/hero.jpg" alt="Hero Image" />
+            <div class="col-sm-12 col-md-6 d-none d-md-block">
+              <div class="hero-image">
+                <img src="img/hero.jpg" alt="Ale Fernández, Frontend Developer" />
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <div class="patron">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" class="bot" aria-hidden="true">
+          <path
+            fill="#0b0f14"
+            fill-opacity="1"
+            d="M0,0L0,192L110.8,192L110.8,96L221.5,96L221.5,128L332.3,128L332.3,32L443.1,32L443.1,224L553.8,224L553.8,192L664.6,192L664.6,32L775.4,32L775.4,288L886.2,288L886.2,256L996.9,256L996.9,32L1107.7,32L1107.7,192L1218.5,192L1218.5,224L1329.2,224L1329.2,0L1440,0L1440,320L1329.2,320L1329.2,320L1218.5,320L1218.5,320L1107.7,320L1107.7,320L996.9,320L996.9,320L886.2,320L886.2,320L775.4,320L775.4,320L664.6,320L664.6,320L553.8,320L553.8,320L443.1,320L443.1,320L332.3,320L332.3,320L221.5,320L221.5,320L110.8,320L110.8,320L0,320L0,320Z"
+          ></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220" class="bot" aria-hidden="true">
+          <path
+            fill="#000205"
+            fill-opacity="1"
+            d="M0,160L0,64L65.5,64L65.5,96L130.9,96L130.9,128L196.4,128L196.4,32L261.8,32L261.8,256L327.3,256L327.3,192L392.7,192L392.7,224L458.2,224L458.2,160L523.6,160L523.6,256L589.1,256L589.1,320L654.5,320L654.5,128L720,128L720,128L785.5,128L785.5,224L850.9,224L850.9,96L916.4,96L916.4,320L981.8,320L981.8,32L1047.3,32L1047.3,128L1112.7,128L1112.7,128L1178.2,128L1178.2,96L1243.6,96L1243.6,64L1309.1,64L1309.1,160L1374.5,160L1374.5,224L1440,224L1440,320L1374.5,320L1374.5,320L1309.1,320L1309.1,320L1243.6,320L1243.6,320L1178.2,320L1178.2,320L1112.7,320L1112.7,320L1047.3,320L1047.3,320L981.8,320L981.8,320L916.4,320L916.4,320L850.9,320L850.9,320L785.5,320L785.5,320L720,320L720,320L654.5,320L654.5,320L589.1,320L589.1,320L523.6,320L523.6,320L458.2,320L458.2,320L392.7,320L392.7,320L327.3,320L327.3,320L261.8,320L261.8,320L196.4,320L196.4,320L130.9,320L130.9,320L65.5,320L65.5,320L0,320L0,320Z"
+          ></path>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240" aria-hidden="true">
+          <path
+            fill="#12171b"
+            fill-opacity="1"
+            d="M0,160L0,64L38.9,64L38.9,0L77.8,0L77.8,160L116.8,160L116.8,224L155.7,224L155.7,160L194.6,160L194.6,128L233.5,128L233.5,96L272.4,96L272.4,128L311.4,128L311.4,32L350.3,32L350.3,224L389.2,224L389.2,160L428.1,160L428.1,224L467,224L467,96L505.9,96L505.9,288L544.9,288L544.9,224L583.8,224L583.8,288L622.7,288L622.7,96L661.6,96L661.6,64L700.5,64L700.5,32L739.5,32L739.5,288L778.4,288L778.4,128L817.3,128L817.3,160L856.2,160L856.2,192L895.1,192L895.1,32L934.1,32L934.1,160L973,160L973,128L1011.9,128L1011.9,32L1050.8,32L1050.8,160L1089.7,160L1089.7,320L1128.6,320L1128.6,128L1167.6,128L1167.6,128L1206.5,128L1206.5,0L1245.4,0L1245.4,288L1284.3,288L1284.3,288L1323.2,288L1323.2,128L1362.2,128L1362.2,224L1401.1,224L1401.1,64L1440,64L1440,320L1401.1,320L1401.1,320L1362.2,320L1362.2,320L1323.2,320L1323.2,320L1284.3,320L1284.3,320L1245.4,320L1245.4,320L1206.5,320L1206.5,320L1167.6,320L1167.6,320L1128.6,320L1128.6,320L1089.7,320L1089.7,320L1050.8,320L1050.8,320L1011.9,320L1011.9,320L973,320L973,320L934.1,320L934.1,320L895.1,320L895.1,320L856.2,320L856.2,320L817.3,320L817.3,320L778.4,320L778.4,320L739.5,320L739.5,320L700.5,320L700.5,320L661.6,320L661.6,320L622.7,320L622.7,320L583.8,320L583.8,320L544.9,320L544.9,320L505.9,320L505.9,320L467,320L467,320L428.1,320L428.1,320L389.2,320L389.2,320L350.3,320L350.3,320L311.4,320L311.4,320L272.4,320L272.4,320L233.5,320L233.5,320L194.6,320L194.6,320L155.7,320L155.7,320L116.8,320L116.8,320L77.8,320L77.8,320L38.9,320L38.9,320L0,320L0,320Z"
+          ></path>
+        </svg>
       </div>
-    </div>
-    <!-- Hero End -->
 
-    <!-- About Start -->
-    <div class="patron">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 220"
-        class="bot"
-      >
-        <path
-          fill="#0b0f14"
-          fill-opacity="1"
-          d="M0,0L0,192L110.8,192L110.8,96L221.5,96L221.5,128L332.3,128L332.3,32L443.1,32L443.1,224L553.8,224L553.8,192L664.6,192L664.6,32L775.4,32L775.4,288L886.2,288L886.2,256L996.9,256L996.9,32L1107.7,32L1107.7,192L1218.5,192L1218.5,224L1329.2,224L1329.2,0L1440,0L1440,320L1329.2,320L1329.2,320L1218.5,320L1218.5,320L1107.7,320L1107.7,320L996.9,320L996.9,320L886.2,320L886.2,320L775.4,320L775.4,320L664.6,320L664.6,320L553.8,320L553.8,320L443.1,320L443.1,320L332.3,320L332.3,320L221.5,320L221.5,320L110.8,320L110.8,320L0,320L0,320Z"
-        ></path>
-      </svg>
-      <!-- <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 270"
-        class="bot"
-      >
-        <path
-          fill="#000"
-          fill-opacity="1"
-          d="M0,128L0,288L49.7,288L49.7,256L99.3,256L99.3,64L149,64L149,128L198.6,128L198.6,160L248.3,160L248.3,64L297.9,64L297.9,64L347.6,64L347.6,160L397.2,160L397.2,64L446.9,64L446.9,192L496.6,192L496.6,256L546.2,256L546.2,192L595.9,192L595.9,32L645.5,32L645.5,192L695.2,192L695.2,0L744.8,0L744.8,192L794.5,192L794.5,224L844.1,224L844.1,224L893.8,224L893.8,256L943.4,256L943.4,256L993.1,256L993.1,160L1042.8,160L1042.8,256L1092.4,256L1092.4,32L1142.1,32L1142.1,256L1191.7,256L1191.7,256L1241.4,256L1241.4,160L1291,160L1291,224L1340.7,224L1340.7,96L1390.3,96L1390.3,256L1440,256L1440,320L1390.3,320L1390.3,320L1340.7,320L1340.7,320L1291,320L1291,320L1241.4,320L1241.4,320L1191.7,320L1191.7,320L1142.1,320L1142.1,320L1092.4,320L1092.4,320L1042.8,320L1042.8,320L993.1,320L993.1,320L943.4,320L943.4,320L893.8,320L893.8,320L844.1,320L844.1,320L794.5,320L794.5,320L744.8,320L744.8,320L695.2,320L695.2,320L645.5,320L645.5,320L595.9,320L595.9,320L546.2,320L546.2,320L496.6,320L496.6,320L446.9,320L446.9,320L397.2,320L397.2,320L347.6,320L347.6,320L297.9,320L297.9,320L248.3,320L248.3,320L198.6,320L198.6,320L149,320L149,320L99.3,320L99.3,320L49.7,320L49.7,320L0,320L0,320Z"
-        ></path>
-      </svg> -->
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 220"
-        class="bot"
-      >
-        <path
-          fill="#000205"
-          fill-opacity="1"
-          d="M0,160L0,64L65.5,64L65.5,96L130.9,96L130.9,128L196.4,128L196.4,32L261.8,32L261.8,256L327.3,256L327.3,192L392.7,192L392.7,224L458.2,224L458.2,160L523.6,160L523.6,256L589.1,256L589.1,320L654.5,320L654.5,128L720,128L720,128L785.5,128L785.5,224L850.9,224L850.9,96L916.4,96L916.4,320L981.8,320L981.8,32L1047.3,32L1047.3,128L1112.7,128L1112.7,128L1178.2,128L1178.2,96L1243.6,96L1243.6,64L1309.1,64L1309.1,160L1374.5,160L1374.5,224L1440,224L1440,320L1374.5,320L1374.5,320L1309.1,320L1309.1,320L1243.6,320L1243.6,320L1178.2,320L1178.2,320L1112.7,320L1112.7,320L1047.3,320L1047.3,320L981.8,320L981.8,320L916.4,320L916.4,320L850.9,320L850.9,320L785.5,320L785.5,320L720,320L720,320L654.5,320L654.5,320L589.1,320L589.1,320L523.6,320L523.6,320L458.2,320L458.2,320L392.7,320L392.7,320L327.3,320L327.3,320L261.8,320L261.8,320L196.4,320L196.4,320L130.9,320L130.9,320L65.5,320L65.5,320L0,320L0,320Z"
-        ></path>
-      </svg>
-
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240">
-        <path
-          fill="#12171b"
-          fill-opacity="1"
-          d="M0,160L0,64L38.9,64L38.9,0L77.8,0L77.8,160L116.8,160L116.8,224L155.7,224L155.7,160L194.6,160L194.6,128L233.5,128L233.5,96L272.4,96L272.4,128L311.4,128L311.4,32L350.3,32L350.3,224L389.2,224L389.2,160L428.1,160L428.1,224L467,224L467,96L505.9,96L505.9,288L544.9,288L544.9,224L583.8,224L583.8,288L622.7,288L622.7,96L661.6,96L661.6,64L700.5,64L700.5,32L739.5,32L739.5,288L778.4,288L778.4,128L817.3,128L817.3,160L856.2,160L856.2,192L895.1,192L895.1,32L934.1,32L934.1,160L973,160L973,128L1011.9,128L1011.9,32L1050.8,32L1050.8,160L1089.7,160L1089.7,320L1128.6,320L1128.6,128L1167.6,128L1167.6,128L1206.5,128L1206.5,0L1245.4,0L1245.4,288L1284.3,288L1284.3,288L1323.2,288L1323.2,128L1362.2,128L1362.2,224L1401.1,224L1401.1,64L1440,64L1440,320L1401.1,320L1401.1,320L1362.2,320L1362.2,320L1323.2,320L1323.2,320L1284.3,320L1284.3,320L1245.4,320L1245.4,320L1206.5,320L1206.5,320L1167.6,320L1167.6,320L1128.6,320L1128.6,320L1089.7,320L1089.7,320L1050.8,320L1050.8,320L1011.9,320L1011.9,320L973,320L973,320L934.1,320L934.1,320L895.1,320L895.1,320L856.2,320L856.2,320L817.3,320L817.3,320L778.4,320L778.4,320L739.5,320L739.5,320L700.5,320L700.5,320L661.6,320L661.6,320L622.7,320L622.7,320L583.8,320L583.8,320L544.9,320L544.9,320L505.9,320L505.9,320L467,320L467,320L428.1,320L428.1,320L389.2,320L389.2,320L350.3,320L350.3,320L311.4,320L311.4,320L272.4,320L272.4,320L233.5,320L233.5,320L194.6,320L194.6,320L155.7,320L155.7,320L116.8,320L116.8,320L77.8,320L77.8,320L38.9,320L38.9,320L0,320L0,320Z"
-        ></path>
-      </svg>
-    </div>
-
-    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-lg-4">
-            <div class="about-img">
-              <img src="img/69838237.jpg" alt="Image" />
+      <section class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-4">
+              <div class="about-img">
+                <img src="img/69838237.jpg" alt="Foto de perfil de Ale Fernández" />
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="about-content">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                  <p>Mi Curriculum</p>
+                  <h2>Experiencia Real</h2>
+                </header>
+                <div class="about-text">
+                  <p>
+                    ¡Hola! Soy un desarrollador frontend de Santa Fe, Argentina.
+                    Trabajo con React y me entusiasma ver cómo una buena interfaz
+                    puede mejorar la vida de las personas. Me formé en bootcamps,
+                    cursos intensivos y proyectos colaborativos reales que me
+                    enseñaron más que solo código: me enseñaron a trabajar en
+                    equipo, a resolver problemas y a ser constante. Hoy busco
+                    seguir creciendo profesionalmente, aportar valor desde el
+                    frontend y construir productos digitales que realmente sirvan.
+                  </p>
+                </div>
+                <div class="skills">
+                  <div class="skill-name">
+                    <p>Maquetación</p>
+                    <p>95%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="95"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-label="Maquetación 95%"
+                    ></div>
+                  </div>
+                  <div class="skill-name">
+                    <p>Frontend con React JS</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-label="Frontend con React JS 75%"
+                    ></div>
+                  </div>
+                  <div class="skill-name">
+                    <p>Trabajos con Github</p>
+                    <p>75%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-label="Trabajos con Github 75%"
+                    ></div>
+                  </div>
+                  <div class="skill-name">
+                    <p>Metodología SCRUM</p>
+                    <p>80%</p>
+                  </div>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-label="Metodología SCRUM 80%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-8">
-            <div class="about-content">
-              <!-- <div class="section-header text-left">
-                <p>Conóceme</p>
-                <h2>5 Años Aprendiendo</h2>
-              </div> -->
-              <header
-                class="section-header text-center wow zoomIn"
-                data-wow-delay="0.1s"
-              >
-                <p>Mi Curriculum</p>
-                <h2>Experiencia Real</h2>
-              </header>
+        </div>
+      </section>
 
-              <div class="about-text">
+      <section class="experience" id="experience">
+        <div class="container">
+          <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Mi Curriculum</p>
+            <h2>Experiencia Real</h2>
+          </header>
+          <div class="timeline">
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                <div class="timeline-date">MAYO 2021 - Actualidad</div>
+                <h2>Asistente Académico</h2>
+                <h4><strong>CoderHouse</strong> - Plataforma de cursos online.</h4>
                 <p>
-                  ¡Hola! Soy un desarrollador frontend de Santa Fe, Argentina.
-                  Trabajo con React y me entusiasma ver cómo una buena interfaz
-                  puede mejorar la vida de las personas. Me formé en bootcamps,
-                  cursos intensivos y proyectos colaborativos reales que me
-                  enseñaron más que solo código: me enseñaron a trabajar en
-                  equipo, a resolver problemas y a ser constante. Hoy busco
-                  seguir creciendo profesionalmente, aportar valor desde el
-                  frontend y construir productos digitales que realmente sirvan.
+                  Acompañamiento a estudiantes en cursos de
+                  <span>Desarrollo Web, JavaScript y React JS</span>.
+                  Planificación de clases, resolución de dudas en vivo y
+                  corrección de proyectos. Más de 18 comisiones asistidas hasta la fecha.
                 </p>
               </div>
-              <div class="skills">
-                <div class="skill-name">
-                  <p>Maquetación</p>
-                  <p>95%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="skill-name">
-                  <p>Frontend con React JS</p>
-                  <p>75%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="skill-name">
-                  <p>Trabajos con Github</p>
-                  <p>75%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="skill-name">
-                  <p>Metodología SCRUM</p>
-                  <p>80%</p>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
+            </div>
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                <div class="timeline-date">FEBRERO 2024 - FEBRERO 2025</div>
+                <h2>Web Developer</h2>
+                <h4><strong>No Country</strong> - Simulación laboral.</h4>
+                <p>
+                  Participé en múltiples MVPs: clínica veterinaria, juegos tipo
+                  casino y viajes compartidos. Implementación de registros, login,
+                  perfiles dinámicos y consumo de APIs REST. Stack:
+                  <span>React, Redux, Tailwind CSS, Figma</span>. Equipos
+                  distribuidos con metodologías ágiles (Scrum, Jira, Miro).
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                <div class="timeline-date">JULIO - AGOSTO 2024</div>
+                <h2>Frontend Developer</h2>
+                <h4><strong>Quinto Impacto</strong> (LATAM Semillero)</h4>
+                <p>
+                  Proyecto Ubuntu: plataforma de financiamiento de impacto social.
+                  Desarrollé vistas interactivas en <span>React</span> utilizando
+                  <span>Material UI</span> y CSS, integré login con
+                  <span>Google Auth</span>, dashboard de administración y paneles
+                  de estadísticas. Trabajo en equipo con <span>Scrum</span>,
+                  usando Gitea, <span>Trello y Figma</span>.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                <div class="timeline-date">MAYO 2022 - DICIEMBRE 2022</div>
+                <h2>Web Developer</h2>
+                <h4><strong>Freelance</strong> - Trabajos independientes</h4>
+                <p>
+                  Desarrollé 3 sitios web para distintos emprendimientos de tipo
+                  gastronómico, servicios de peluquería y contrataciones de finanzas.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+              <div class="timeline-text">
+                <div class="timeline-date">OCTUBRE 2021 - JULIO 2023</div>
+                <h2>Web Developer</h2>
+                <h4><strong>ORISOM</strong> Corp.</h4>
+                <p>
+                  Maquetación de interfaces en
+                  <span>HTML, CSS y JavaScript</span> bajo diseño CMS. Integración
+                  de <span>librerías frontend</span> para efectos de scroll,
+                  sliders, diseño responsive. <span>Colaboración</span> con equipos
+                  de <span>diseño</span> para traducir UI en componentes funcionales.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- About End -->
+      </section>
 
-    <!-- Experience Start -->
-    <div class="experience" id="experience">
-      <div class="container">
-        <header
-          class="section-header text-center wow zoomIn"
-          data-wow-delay="0.1s"
-        >
-          <p>Mi Curriculum</p>
-          <h2>Experiencia Real</h2>
-        </header>
-        <div class="timeline">
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">MAYO 2021 - Actualidad</div>
-              <h2>Asistente Académico</h2>
-              <h4>
-                <strong>CoderHouse</strong> - Plataforma de cursos online.
-              </h4>
-              <p>
-                Acompañamiento a estudiantes en cursos de
-                <span>Desarrollo Web, JavaScript y React JS</span>.
-                Planificación de clases, resolución de dudas en vivo y
-                corrección de proyectos. Más de 18 comisiones asistidas hasta la
-                fecha.
-              </p>
-            </div>
-          </div>
-          <div
-            class="timeline-item right wow slideInRight"
-            data-wow-delay="0.1s"
+      <div class="banner wow">
+        <div class="section-header text-center">
+          <h2>Te dejo mi <span>LinkedIn</span> para conectar.</h2>
+        </div>
+        <div class="container banner-text">
+          <a
+            href="https://www.linkedin.com/in/alefernandez88"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn"
           >
-            <div class="timeline-text">
-              <div class="timeline-date">FEBRERO 2024 - FEBRERO 2025</div>
-              <h2>Web Developer</h2>
-              <h4>
-                <strong class="fw-bold">No Country</strong> - Simulación
-                laboral.
-              </h4>
-              <p>
-                Participé en múltiples MVPs: clínica veterinaria, juegos tipo
-                casino y viajes compartidos. Implementación de registros, login,
-                perfiles dinámicos y consumo de APIs REST. Stack:
-                <span>React, Redux, Tailwind CSS, Figma</span>. Equipos
-                distribuidos con metodologías ágiles (Scrum, Jira, Miro).
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">JULIO - Agosto 2024</div>
-              <h2>Frontend Developer</h2>
-              <h4><strong>Quinto Impacto </strong> (LATAM Semillero)</h4>
-              <p>
-                Proyecto Ubuntu: plataforma de financiamiento de impacto social.
-                Desarrollé vistas interactivas en <span>React</span> utilizando
-                <span>Material UI</span> y CSS, integré login con
-                <span>Google Auth</span>, dashboard de administración y paneles
-                de estadísticas. Trabajo en equipo con <span>Scrum</span>,
-                usando Gitea, <span>Trello y Figma</span>.
-              </p>
-            </div>
-          </div>
-          <div
-            class="timeline-item right wow slideInRight"
-            data-wow-delay="0.1s"
-          >
-            <div class="timeline-text">
-              <div class="timeline-date">MAYO 2022 - DICIEMBRE 2022</div>
-              <h2>Web Developer</h2>
-              <h4><strong>Freelance</strong> - trabajos independientes</h4>
-              <p>
-                Desarrolle 3 sitios web para distintos emprendimientos de tipo
-                gastronómico, servicios de peluquería y contrataciones de
-                finanzas.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
-            <div class="timeline-text">
-              <div class="timeline-date">OCTUBRE 2021 - JULIO 2023</div>
-              <h2>Web Developer</h2>
-              <h4><strong>ORISOM</strong> Corp.</h4>
-              <p>
-                Maquetación de interfaces en
-                <span>HTML, CSS y JavaScript</span> bajo diseño CMS. Integración
-                de <span>librerías frontend</span> para efectos de scroll,
-                sliders, diseño responsive. <span>Colaboración</span> con
-                equipos de <span>diseño</span>
-                para traducir UI en componentes funcionales.
-              </p>
-            </div>
-          </div>
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <p>
+            Conectá conmigo en LinkedIn para ver más sobre mi experiencia,
+            proyectos y aprendizajes en desarrollo frontend.
+          </p>
         </div>
       </div>
-    </div>
-    <!-- Job Experience End -->
 
-    <!-- Banner Start -->
-    <div class="banner wow">
-      <div class="section-header text-center">
-        <h2>Te dejo mi <span>LinkedIn</span> para conectar.</h2>
-      </div>
-      <div class="container banner-text">
-        <a
-          href="https://www.linkedin.com/in/alefernandez88"
-          target="_blank"
-          class="btn"
-          ><i class="fab fa-linkedin"></i>
-        </a>
-        <p>
-          Conectá conmigo en LinkedIn para ver más sobre mi experiencia,
-          proyectos y aprendizajes en desarrollo frontend.
-        </p>
-      </div>
-    </div>
-    <!-- Banner End -->
-
-    <!-- Portfolio Start -->
-    <div class="portfolio" id="portfolio">
-      <div class="">
-        <div
-          class="section-header text-center wow zoomIn"
-          data-wow-delay="0.1s"
-        >
-          <p>Portfolio</p>
-          <h2>Algunos de mis proyectos</h2>
-        </div>
-
-        <div class="box-container">
-          <div class="box-item">
-            <div class="flip-box">
-              <div
-                class="flip-box-front text-center"
-                style="background-image: url('./img/contador-calorias.png')"
-              >
-                <!-- <div class="inner color-white">
-                  <img
-                    src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
-                    alt=""
-                    class="flip-box-img"
-                  />
-                </div> -->
-              </div>
-              <div
-                class="flip-box-back text-center"
-                style="
-                  background: radial-gradient(
-                    50% 50% at 50% 50%,
-                    #2f3e52 27.6%,
-                    #202833 100%
-                  );
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <a
-                  href="https://tiny-croissant-35fcfe.netlify.app/"
-                  target="_blank"
+      <section class="portfolio" id="portfolio">
+        <div>
+          <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+            <p>Portfolio</p>
+            <h2>Algunos de mis proyectos</h2>
+          </div>
+          <div class="box-container">
+            <div class="box-item">
+              <div class="flip-box">
+                <div
+                  class="flip-box-front text-center"
+                  style="background-image: url('./img/contador-calorias.png')"
+                ></div>
+                <div
+                  class="flip-box-back text-center"
+                  style="background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%); background-position: center; background-repeat: no-repeat; background-size: cover;"
                 >
-                  <div class="inner color-white">
-                    <h3 class="flip-box-header">Contador</h3>
-                    <p>de Calorías</p>
-                    <div class="projectsLogos">
-                      <div class="containerLogo">
-                        <img src="./img/logos/reactjs-logo.svg" alt="" />
-                        <h6>React JS</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/tailwind-logo.png" alt="" />
-                        <h6>Tailwind css</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/tyscript-logo.svg" alt="" />
-                        <h6>typeScript</h6>
+                  <a href="https://tiny-croissant-35fcfe.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="inner color-white">
+                      <h3 class="flip-box-header">Contador</h3>
+                      <p>de Calorías</p>
+                      <div class="projectsLogos">
+                        <div class="containerLogo">
+                          <img src="./img/logos/reactjs-logo.svg" alt="React JS" />
+                          <h6>React JS</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/tailwind-logo.png" alt="Tailwind CSS" />
+                          <h6>Tailwind CSS</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/tyscript-logo.svg" alt="TypeScript" />
+                          <h6>TypeScript</h6>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="box-item">
-            <div class="flip-box">
-              <div
-                class="flip-box-front text-center"
-                style="background-image: url('./img/img-guitarTienda.png')"
-              >
-                <div class="inner color-white">
-                  <h3 class="flip-box-header">Vibras</h3>
-                  <p>Guitar Store</p>
-
-                  <img
-                    src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
-                    alt=""
-                    class="flip-box-img"
-                  />
+                  </a>
                 </div>
               </div>
-              <div
-                class="flip-box-back text-center"
-                style="
-                  background: radial-gradient(
-                    50% 50% at 50% 50%,
-                    #2f3e52 27.6%,
-                    #202833 100%
-                  );
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <a href="https://carritoreact25.netlify.app/" target="_blank">
+            </div>
+            <div class="box-item">
+              <div class="flip-box">
+                <div
+                  class="flip-box-front text-center"
+                  style="background-image: url('./img/img-guitarTienda.png')"
+                >
                   <div class="inner color-white">
                     <h3 class="flip-box-header">Vibras</h3>
                     <p>Guitar Store</p>
-                    <div class="projectsLogos">
-                      <div class="containerLogo">
-                        <img src="./img/logos/reactjs-logo.svg" alt="" />
-                        <h6>React JS</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/bootstrap-logo.png" alt="" />
-                        <h6>Bootstrap 4</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/tyscript-logo.svg" alt="" />
-                        <h6>typeScript</h6>
+                    <img
+                      src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
+                      alt=""
+                      class="flip-box-img"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flip-box-back text-center"
+                  style="background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%); background-position: center; background-repeat: no-repeat; background-size: cover;"
+                >
+                  <a href="https://carritoreact25.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="inner color-white">
+                      <h3 class="flip-box-header">Vibras</h3>
+                      <p>Guitar Store</p>
+                      <div class="projectsLogos">
+                        <div class="containerLogo">
+                          <img src="./img/logos/reactjs-logo.svg" alt="React JS" />
+                          <h6>React JS</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/bootstrap-logo.png" alt="Bootstrap" />
+                          <h6>Bootstrap 4</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/tyscript-logo.svg" alt="TypeScript" />
+                          <h6>TypeScript</h6>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="box-item">
-            <div class="flip-box">
-              <div
-                class="flip-box-front text-center"
-                style="background-image: url('./img/img-barberiaZhukito.png')"
-              >
-                <div class="inner color-white">
-                  <h3 class="flip-box-header">Zhukito's razor</h3>
-                  <p>Barbería.</p>
-                  <img
-                    src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
-                    alt=""
-                    class="flip-box-img"
-                  />
+                  </a>
                 </div>
               </div>
-              <div
-                class="flip-box-back text-center"
-                style="
-                  background: radial-gradient(
-                    50% 50% at 50% 50%,
-                    #2f3e52 27.6%,
-                    #202833 100%
-                  );
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <a
-                  href="https://alefernandez88.github.io/Barbershop-/"
-                  target="_blank"
+            </div>
+            <div class="box-item">
+              <div class="flip-box">
+                <div
+                  class="flip-box-front text-center"
+                  style="background-image: url('./img/img-barberiaZhukito.png')"
                 >
                   <div class="inner color-white">
                     <h3 class="flip-box-header">Zhukito's razor</h3>
                     <p>Barbería.</p>
-                    <div class="projectsLogos">
-                      <div class="containerLogo">
-                        <img src="./img/logos/html5-logo.svg" alt="" />
-                        <h6>HTML 5</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/css3-logo.svg" alt="" />
-                        <h6>CSS 3</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/bootstrap-logo.png" alt="" />
-                        <h6>Bootstrap 5</h6>
+                    <img
+                      src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
+                      alt=""
+                      class="flip-box-img"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flip-box-back text-center"
+                  style="background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%); background-position: center; background-repeat: no-repeat; background-size: cover;"
+                >
+                  <a href="https://alefernandez88.github.io/Barbershop-/" target="_blank" rel="noopener noreferrer">
+                    <div class="inner color-white">
+                      <h3 class="flip-box-header">Zhukito's razor</h3>
+                      <p>Barbería.</p>
+                      <div class="projectsLogos">
+                        <div class="containerLogo">
+                          <img src="./img/logos/html5-logo.svg" alt="HTML5" />
+                          <h6>HTML 5</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/css3-logo.svg" alt="CSS3" />
+                          <h6>CSS 3</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/bootstrap-logo.png" alt="Bootstrap" />
+                          <h6>Bootstrap 5</h6>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="box-item">
-            <div class="flip-box">
-              <div
-                class="flip-box-front text-center filter-"
-                style="background-image: url('./img/img-carolineSada.png')"
-              >
-                <div class="inner color-white">
-                  <h3 class="flip-box-header">Caroline Sada</h3>
-                  <p>Consultora financiera</p>
-                  <img
-                    src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
-                    alt=""
-                    class="flip-box-img"
-                  />
+                  </a>
                 </div>
               </div>
-              <div
-                class="flip-box-back text-center"
-                style="
-                  background: radial-gradient(
-                    50% 50% at 50% 50%,
-                    #2f3e52 27.6%,
-                    #202833 100%
-                  );
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                "
-              >
-                <a
-                  href="https://alefernandez88.github.io/Caroline_Sada_web/"
-                  target="_blank"
+            </div>
+            <div class="box-item">
+              <div class="flip-box">
+                <div
+                  class="flip-box-front text-center"
+                  style="background-image: url('./img/img-carolineSada.png')"
                 >
                   <div class="inner color-white">
                     <h3 class="flip-box-header">Caroline Sada</h3>
                     <p>Consultora financiera</p>
-                    <div class="projectsLogos">
-                      <div class="containerLogo">
-                        <img src="./img/logos/html5-logo.svg" alt="" />
-                        <h6>HTML 5</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/css3-logo.svg" alt="" />
-                        <h6>CSS 3</h6>
-                      </div>
-                      <div class="containerLogo">
-                        <img src="./img/logos/js-logo.svg" alt="" />
-                        <h6>JavaScript</h6>
+                    <img
+                      src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png"
+                      alt=""
+                      class="flip-box-img"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="flip-box-back text-center"
+                  style="background: radial-gradient(50% 50% at 50% 50%, #2f3e52 27.6%, #202833 100%); background-position: center; background-repeat: no-repeat; background-size: cover;"
+                >
+                  <a href="https://alefernandez88.github.io/Caroline_Sada_web/" target="_blank" rel="noopener noreferrer">
+                    <div class="inner color-white">
+                      <h3 class="flip-box-header">Caroline Sada</h3>
+                      <p>Consultora financiera</p>
+                      <div class="projectsLogos">
+                        <div class="containerLogo">
+                          <img src="./img/logos/html5-logo.svg" alt="HTML5" />
+                          <h6>HTML 5</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/css3-logo.svg" alt="CSS3" />
+                          <h6>CSS 3</h6>
+                        </div>
+                        <div class="containerLogo">
+                          <img src="./img/logos/js-logo.svg" alt="JavaScript" />
+                          <h6>JavaScript</h6>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Portfolio End -->
+      </section>
 
-    <!-- Contact Start -->
-    <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-      <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-        <p>Contacto</p>
-        <h2>Escríbeme un mensaje</h2>
-      </div>
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <div class="contact-form">
-                <div id="success"></div>
-                <form
-                  name="sentMessage"
-                  id="contactForm"
-                  novalidate="novalidate"
-                >
-                  <div class="control-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Nombre"
-                      required="required"
-                      data-validation-required-message="Por favor escriba su nombre"
-                    />
-                    <p class="help-block"></p>
-                  </div>
-                  <div class="control-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Email"
-                      required="required"
-                      data-validation-required-message="Por favor escriba su email"
-                    />
-                    <p class="help-block"></p>
-                  </div>
-                  <div class="control-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Asunto"
-                      required="required"
-                      data-validation-required-message="Por favor escriba su asunto"
-                    />
-                    <p class="help-block"></p>
-                  </div>
-                  <div class="control-group">
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      placeholder="Mensaje"
-                      required="required"
-                      data-validation-required-message="Por favor escriba su mensaje"
-                    ></textarea>
-                    <p class="help-block"></p>
-                  </div>
-                  <div>
-                    <button class="btn" type="submit" id="sendMessageButton">
-                      Enviar
-                    </button>
-                  </div>
-                </form>
+      <section class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+        <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+          <p>Contacto</p>
+          <h2>Escríbeme un mensaje</h2>
+        </div>
+        <div class="container-fluid">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <div class="contact-form">
+                  <div id="success"></div>
+                  <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                    <div class="control-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Nombre"
+                        required
+                        data-validation-required-message="Por favor escriba su nombre"
+                      />
+                      <p class="help-block"></p>
+                    </div>
+                    <div class="control-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                        data-validation-required-message="Por favor escriba su email"
+                      />
+                      <p class="help-block"></p>
+                    </div>
+                    <div class="control-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        name="subject"
+                        placeholder="Asunto"
+                        required
+                        data-validation-required-message="Por favor escriba su asunto"
+                      />
+                      <p class="help-block"></p>
+                    </div>
+                    <div class="control-group">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        placeholder="Mensaje"
+                        required
+                        data-validation-required-message="Por favor escriba su mensaje"
+                      ></textarea>
+                      <p class="help-block"></p>
+                    </div>
+                    <div>
+                      <button class="btn" type="submit" id="sendMessageButton">Enviar</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- Contact End -->
+      </section>
+    </main>
 
-    <!-- Footer Start -->
-    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+    <footer class="footer wow fadeIn" data-wow-delay="0.3s">
       <div class="container-fluid">
         <div class="container">
           <div class="footer-info">
             <h2>Ale Fernández</h2>
             <h3>Curuzú Cuatía, Corrientes, Argentina</h3>
             <div class="footer-menu">
-              <a href="mailto:alejandro.d.fernandez.88@gmail.com"
-                ><p>alejandro.d.fernandez.88@gmail.com</p></a
-              >
+              <a href="mailto:alejandro.d.fernandez.88@gmail.com">alejandro.d.fernandez.88@gmail.com</a>
             </div>
             <div class="footer-social">
-              <a href="https://wa.me/59891234567" target="_blank" rel="noopener"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-              <a
-                href="https://github.com/aleFernandez88"
-                target="_blank"
-                rel="noopener"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://linkedin.com/in/aleFernandez88"
-                target="_blank"
-                rel="noopener"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+              <a href="https://wa.me/5493774491666" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://github.com/aleFernandez88" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/aleFernandez88" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
           </div>
         </div>
         <div class="container copyright">
-          <p>
-            &copy; <a href="#">Ale Folio</a>, Todos los derechos reservados |
-            Creado por
-            <a href="#">Ale Fernández</a>
-          </p>
+          <p>&copy; Ale Fernández — Todos los derechos reservados</p>
         </div>
       </div>
-    </div>
-    <!-- Footer End -->
+    </footer>
 
-    <!-- Back to top button -->
-    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="btn back-to-top" aria-label="Volver arriba">
+      <i class="fa fa-chevron-up"></i>
+    </a>
 
-    <!-- Pre Loader -->
-    <div id="loader" class="show">
+    <div id="loader" class="show" aria-hidden="true">
       <div class="loader"></div>
     </div>
 
-    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -751,12 +606,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
 </html>
