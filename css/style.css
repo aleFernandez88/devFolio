@@ -188,6 +188,33 @@ a:focus {
   color: #414141;
 }
 
+.whatsapp-float {
+  position: fixed;
+  right: 15px;
+  bottom: 70px;
+  z-index: 9;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #12171b;
+  border: 1.5px solid #66fcf1;
+  color: #66fcf1;
+  font-size: 22px;
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.whatsapp-float:hover {
+  background: #66fcf1;
+  color: #12171b;
+  box-shadow: 0 0 14px rgba(102, 252, 241, 0.5);
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
 
 /**********************************/
 /*********** Nav Bar CSS **********/
