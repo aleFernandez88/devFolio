@@ -202,7 +202,8 @@ a:focus {
   background: #12171b;
   border: 1.5px solid #66fcf1;
   color: #66fcf1;
-  font-size: 22px;
+  font-size: 38px;
+  line-height: 1;
   text-decoration: none;
   transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
 }
