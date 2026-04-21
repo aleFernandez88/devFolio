@@ -1,15 +1,15 @@
 // ─── CONFIGURACIÓN EMAILJS ──────────────────────────────────────────────────
 // Reemplazá los 3 valores de abajo con los de tu cuenta en emailjs.com
-const EMAILJS_PUBLIC_KEY  = "TU_PUBLIC_KEY";
-const EMAILJS_SERVICE_ID  = "TU_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY = "T84310eldmsd5qAQC";
+const EMAILJS_SERVICE_ID = "service_pw2vjpk";
+const EMAILJS_TEMPLATE_ID = "template_sah1j8e";
 // ────────────────────────────────────────────────────────────────────────────
 
 (function () {
   emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
-  const form    = document.getElementById("contactForm");
-  const btn     = document.getElementById("sendMessageButton");
+  const form = document.getElementById("contactForm");
+  const btn = document.getElementById("sendMessageButton");
   const success = document.getElementById("success");
 
   function showMessage(html, type) {
@@ -22,16 +22,19 @@ const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
 
   function validate() {
     const fields = [
-      { id: "name",    label: "nombre"  },
-      { id: "email",   label: "email"   },
-      { id: "subject", label: "asunto"  },
+      { id: "name", label: "nombre" },
+      { id: "email", label: "email" },
+      { id: "subject", label: "asunto" },
       { id: "message", label: "mensaje" },
     ];
 
     for (const field of fields) {
       const el = document.getElementById(field.id);
       if (!el.value.trim()) {
-        showMessage(`Por favor completá el campo <strong>${field.label}</strong>.`, "warning");
+        showMessage(
+          `Por favor completá el campo <strong>${field.label}</strong>.`,
+          "warning",
+        );
         el.focus();
         return false;
       }
@@ -39,7 +42,10 @@ const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
 
     const emailEl = document.getElementById("email");
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim())) {
-      showMessage("Por favor ingresá un <strong>email válido</strong>.", "warning");
+      showMessage(
+        "Por favor ingresá un <strong>email válido</strong>.",
+        "warning",
+      );
       emailEl.focus();
       return false;
     }
@@ -53,28 +59,34 @@ const EMAILJS_TEMPLATE_ID = "TU_TEMPLATE_ID";
 
     if (!validate()) return;
 
-    btn.disabled    = true;
+    btn.disabled = true;
     btn.textContent = "Enviando...";
 
     const params = {
-      name:     document.getElementById("name").value.trim(),
+      name: document.getElementById("name").value.trim(),
       reply_to: document.getElementById("email").value.trim(),
-      asunto:   document.getElementById("subject").value.trim(),
-      message:  document.getElementById("message").value.trim(),
+      asunto: document.getElementById("subject").value.trim(),
+      message: document.getElementById("message").value.trim(),
     };
 
     emailjs
       .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, params)
       .then(function () {
-        showMessage("¡Mensaje enviado! Me pondré en contacto pronto.", "success");
+        showMessage(
+          "¡Mensaje enviado! Me pondré en contacto pronto.",
+          "success",
+        );
         form.reset();
       })
       .catch(function (err) {
         console.error("EmailJS error:", err);
-        showMessage("Hubo un error al enviar el mensaje. Intentá de nuevo o escribime por WhatsApp.", "danger");
+        showMessage(
+          "Hubo un error al enviar el mensaje. Intentá de nuevo o escribime por WhatsApp.",
+          "danger",
+        );
       })
       .finally(function () {
-        btn.disabled    = false;
+        btn.disabled = false;
         btn.textContent = "Enviar";
       });
   });
